@@ -42,14 +42,14 @@ async function getAllPosts() {
     }
 }
 
-// Функция для получения поста с id = 5
+// Функция для получения 5 поста
 async function getPost5() {
     // Показываем индикатор загрузки
     resultDiv.innerHTML =
         '<p class="text-center text-gray-500 animate-pulse">Загрузка поста №5...</p>';
 
     try {
-        // GET запрос к конкретному посту
+        
         const res = await fetch("https://jsonplaceholder.typicode.com/posts/5");
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
