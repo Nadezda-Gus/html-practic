@@ -10,11 +10,11 @@
     <!-- Настраиваем тему и цвета Tailwind -->
     <script>
         tailwind.config = {
-            darkMode: 'class', // Поддержка темной темы через класс
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
-                        primary: '#3b82f6', // Добавляем свой цвет (синий)
+                        primary: '#3b82f6', 
                     }
                 }
             }
@@ -32,7 +32,6 @@
                 Студент: Гусарова Надежда
             </p>
         </header>
-        <!-- Кнопки для GET-запросов -->
         <div class="flex flex-wrap gap-4 justify-center mb-10">
             <button onclick="getAllPosts()"
                 class="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition">
@@ -44,7 +43,7 @@
                 2. Получить пост №5
             </button>
         </div>
-        <!-- Форма для создания нового поста (POST-запрос) -->
+        <!-- Форма для создания нового поста -->
         <section class="mb-12">
             <h2 class="text-2xl font-semibold mb-4">Создать новый пост</h2>
             <div class="space-y-4 max-w-xl mx-auto">
